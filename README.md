@@ -1,5 +1,5 @@
-#System Software and Compilers Laboratory
-#Using Lex and Yacc Libraries in Unix
+#System Software and Compilers Laboratory<br />
+#Using Lex and Yacc Libraries in Unix<br />
 
 Programs:
 1.a. LEX: recognize valid arithmetic expression (+,-,*,/). Count and display each identifier and operator.
