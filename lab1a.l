@@ -35,7 +35,7 @@ int main()
 	printf(" Type the arithmetic Expression \n");
 	yylex();
 	printf(" Valid Arithmetic Expression \n");
-	printf(" No. of Operands/Identifiers : %d \n",opnd);
+	printf(" No. of Operands/Identifiers : %d \n",opnd-1);
 	printf(" No. of Additions : %d \n",a[0]);
 	printf(" No. of Subtractions : %d \n",a[1]);
 	printf(" No. of Multiplications : %d \n",a[2]); 
