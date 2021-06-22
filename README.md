@@ -1,6 +1,15 @@
 #System Software and Compilers Laboratory<br />
 #Using Lex and Yacc Libraries in Unix<br />
 
+lab 3,4:
+Command for executing curses.h as alternative for conio.h:
+1. cc - w -o lab4 lab4.c -lncurses
+2. ./lab4
+
+where,
+-w: supress errors
+-o: create obj file
+
 Programs:
 1.a. LEX: recognize valid arithmetic expression (+,-,*,/). Count and display each identifier and operator.<br />
 1.b. YACC: evaluate arithmetic expression involving operators: +, -, *,
