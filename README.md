@@ -3,7 +3,7 @@
 
 lab 3,4:
 Command for executing curses.h as alternative for conio.h:
-1. cc - w -o lab4 lab4.c -lncurses
+1. cc -w -o lab4 lab4.c -lncurses
 2. ./lab4
 
 where,
