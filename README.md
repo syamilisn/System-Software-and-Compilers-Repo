@@ -10,8 +10,8 @@ where,
 -w: supress errors
 -o: create obj file
 
-Programs:
-1. 
+Programs:<br />
+1. <br />
     a. LEX: recognize valid arithmetic expression (+,-,*,/). Count and display each identifier and operator.<br />
     b. YACC: evaluate arithmetic expression involving operators: +, -, *, /<br />
 2. YACC: recognize all strings ending with b preceded by n a’s using the grammar a^n b (note: input n value)<br />
@@ -22,7 +22,7 @@ Programs:
     T2 = C + D
     T3 = T1 + T2
     A = T3<br />
-6. 
+6. <br />
     a. Write a LEX program to eliminate comment lines in a C program and copy the resulting program into a separate file.
     b. Write YACC program to recognize valid identifier, operators and keywords in the given text (C program) file.</br>
 7. Design, develop and implement a C/C++/Java program to simulate the working of Shortest remaining time and Round Robin (RR) scheduling algorithms. Experiment with different quantum sizes for RR  algorithm.</br>
