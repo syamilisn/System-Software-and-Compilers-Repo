@@ -468,9 +468,9 @@ int yy_flex_debug = 0;
 char *yytext;
 #line 1 "lab6b.l"
 #line 2 "lab6b.l"
-#include <stdio.h>
-#include "y.tab.h"
-extern yylval;
+	#include <stdio.h>
+	#include "y.tab.h"
+	extern yylval;
 #line 475 "lex.yy.c"
 #line 476 "lex.yy.c"
 
