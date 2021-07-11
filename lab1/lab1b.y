@@ -17,7 +17,7 @@ $$=$1/$3;}
 %%
 int yyerror()
 {
-	printf("error");
+	printf("\nInvalid Expression\n");
 	exit(0);
 }
 int main()

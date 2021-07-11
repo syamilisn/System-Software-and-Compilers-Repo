@@ -41,7 +41,7 @@ int main()
 	yylex();
 	printf(" Valid Arithmetic Expression \n");
 	printf(" No. of Operands/Identifiers : %d \n",opnd);
-	printf("\nNo. of Operators :\n");
+	printf("\nNo. of Operators : %d\n",a[0]+a[1]+a[2]+a[3]+a[4]);
 	printf(" No. of Additions(+) : %d \n",a[0]);
 	printf(" No. of Subtractions(-) : %d \n",a[1]);
 	printf(" No. of Multiplications(*) : %d \n",a[2]); 
