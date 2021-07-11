@@ -10,7 +10,7 @@ s1: ; | A s1
 %%
 main()
 {
-	printf("Enter A String\n"); yyparse();
+	printf("Enter a String\n"); yyparse();
 }
 int yyerror()
 {
