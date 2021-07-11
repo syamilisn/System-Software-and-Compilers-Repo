@@ -1,5 +1,5 @@
 %{
-	int a[]={0,0,0,0},i,valid=1,opnd=0;
+	int a[]={0,0,0,0,0},i,valid=1,opnd=0;
 	int ext();
 %}
 /* States: 
@@ -8,11 +8,12 @@
 */
 %x OPER
 %%
-[0-9]+ { BEGIN OPER; opnd++;}
+[0-9A-Za-z]+ { BEGIN OPER; opnd++;}
 <OPER>"+" { if(valid) { valid=0;i=0;} else ext();}
 <OPER>"-" { if(valid) { valid=0;i=1;} else ext();}
 <OPER>"*" { if(valid) { valid=0;i=2;} else ext();}
 <OPER>"/" { if(valid) { valid=0;i=3;} else ext();}
+<OPER>"=" { if(valid) { valid=0;i=4;} else ext();}
 <OPER>[a-zA-Z0-9]+ { opnd++;
 			if(valid==0)
 			{
@@ -31,7 +32,7 @@
 %%
 int ext()
 {
-	printf(" Invalid Expression \n");
+	printf("\nInvalid Expression \n");
 	exit(0);
 }
 int main()
@@ -39,9 +40,11 @@ int main()
 	printf(" Type the arithmetic Expression \n");
 	yylex();
 	printf(" Valid Arithmetic Expression \n");
-	printf(" No. of Operands/Identifiers : %d \n",opnd-1);
-	printf(" No. of Additions : %d \n",a[0]);
-	printf(" No. of Subtractions : %d \n",a[1]);
-	printf(" No. of Multiplications : %d \n",a[2]); 
-	printf(" No. of Divisions : %d \n",a[3]);
+	printf(" No. of Operands/Identifiers : %d \n",opnd);
+	printf("\nNo. of Operators :\n");
+	printf(" No. of Additions(+) : %d \n",a[0]);
+	printf(" No. of Subtractions(-) : %d \n",a[1]);
+	printf(" No. of Multiplications(*) : %d \n",a[2]); 
+	printf(" No. of Divisions(/) : %d \n",a[3]);
+	printf(" No. of assignments(=) : %d \n",a[4]);
 }
