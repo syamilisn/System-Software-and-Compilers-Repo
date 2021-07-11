@@ -2,6 +2,10 @@
 	int a[]={0,0,0,0},i,valid=1,opnd=0;
 	int ext();
 %}
+/* States: 
+	%s = patterns with no state specified will also be active.
+	%x = such patterns won't be active.
+*/
 %x OPER
 %%
 [0-9]+ { BEGIN OPER; opnd++;}
